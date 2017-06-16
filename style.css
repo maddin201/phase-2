@@ -1,0 +1,195 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+ }
+
+
+ol, ul {
+  list-style: none;
+}
+
+#todo {
+  position: absolute;
+  left: 50%;
+  width: 400px;
+  margin-left: -200px;
+  
+}
+#todo #todo-form input{
+  padding: 3px;
+  border: solid 1px #666;
+  margin: 0 0 0 5px;
+  width: 250px;
+}
+
+#todo h3{
+  padding: 10px 5px;
+}
+#todo h4{
+  padding: 10px 0;
+}
+
+
+
+
+
+.tasks-parent  {
+  border: solid 2px #777;
+  margin: 5px;
+  padding: 15px;
+  border-color: black;
+ 
+}
+
+    
+.tasks-parent tr  {
+  width: 90%;
+ // background: #adadad;
+  padding: 10px 20px;
+  margin: 1px 0;
+  overflow: hidden;
+ 
+}
+
+
+
+.tasks{
+  width: 100%;
+  list-style: none; 
+}
+.tasks .check{
+  color: #98FB98;
+  width: 20px;
+  cursor: pointer;
+}
+.tasks .todo-name{
+  width: 250px;
+}
+
+
+ #toggle-all {
+    position: relative;
+    top: 0px;
+    left: 0px;
+   // width: 20px;
+  //  height: 25px;
+}
+
+
+#todo-list tr toggle 
+ {
+    text-align: center;
+    width: 40px;
+    height: auto;
+    position: absolute;
+    top: 100;
+    bottom: 100;
+    margin: auto;
+    appearance: none;
+  
+}
+
+td{
+  
+  color: black; 
+}
+
+
+#clearCompleted {
+ /* 
+  margin-bottom: 5px;
+  color: green;
+  border: solid; 
+  width: 50%;   */
+  text-transform: uppercase;
+  background: #22B473;
+  border: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-weight: bold;
+  color: #FFF;
+  padding: 3px 10px;
+  cursor: pointer;
+  width: auto;
+  
+}
+
+
+.check-all-text {
+  
+ // font-size: 15px;
+  
+  
+}
+
+
+
+.stroked { 
+   text-decoration: line-through; 
+  
+}
+
+
+.priorities {
+  position: relative;
+  width: 20%;
+  float: right;
+  text-align: center;
+}
+
+.priorities button {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  border: 3px #333 solid;
+  
+}
+
+.priorities .priorities-list {
+  position: absolute;
+  top: 100%;
+  display: none; 
+}
+
+.priorities .priority {
+  display: inline-block;
+}
+
+.low {
+  background: #00ff00 !important;
+}
+
+.medium {
+  background: #f93 !important;
+}
+
+.high {
+  background: #f30 !important;
+}
+
+
+#add-task{
+  
+ // width: 25%;
+  
+ // color:green;
+ text-transform: uppercase;
+  background: #22B473;
+  border: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-weight: bold;
+  color: #FFF;
+  padding: 3px 10px;
+  cursor: pointer;
+  width: auto; 
+}
